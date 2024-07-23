@@ -1,0 +1,436 @@
+.desktop8Child,
+.frameChild {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+}
+.desktop8Child {
+  position: absolute;
+  margin: 0 !important;
+  top: 157px;
+  left: 684px;
+  background-color: var(--color-gainsboro-100);
+  z-index: 1;
+}
+.frameChild {
+  position: relative;
+  background-color: var(--color-mediumslateblue-200);
+}
+.frameItem {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+}
+.ellipseParent,
+.lineWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+  min-width: 162px;
+}
+.ellipseParent {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  gap: var(--gap-11xs);
+  min-width: 188px;
+}
+.frameInner {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+}
+.elementRowInner {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+}
+.elementRowChild {
+  height: 21px;
+  width: 21px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-100);
+}
+.elementContainer,
+.elementRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.elementRow {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  row-gap: 20px;
+}
+.elementContainer {
+  width: 661px;
+  align-items: flex-start;
+  padding: 0 var(--padding-31xl);
+  box-sizing: border-box;
+}
+.feedback,
+.productInformation {
+  position: relative;
+  line-height: 20px;
+}
+.productInformation {
+  width: 144px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.feedback {
+  align-self: stretch;
+}
+.feedBackContainer {
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 0;
+  box-sizing: border-box;
+}
+.additionalInformation {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.information {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.innerContent,
+.innerContentWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.innerContent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.innerContentWrapper {
+  width: 791px;
+  flex-direction: row;
+  padding: 0 var(--padding-40xl);
+  box-sizing: border-box;
+}
+.name,
+.nameInput {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+.name {
+  color: var(--mono-gray-3);
+  min-width: 38px;
+}
+.nameInput {
+  min-width: 7px;
+}
+.nameInputContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  min-width: 283px;
+  max-width: 100%;
+}
+.namePlaceholder {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.nameParent {
+  width: 489px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+}
+.hayesAmber {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.edit {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 28px;
+}
+.editWrapper {
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 0;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-3);
+}
+.dropdownContainer,
+.dropdownOptionsParent,
+.editWrapper,
+.hayesAmberParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hayesAmberParent {
+  flex-direction: row;
+  gap: var(--gap-2xl);
+}
+.dropdownContainer,
+.dropdownOptionsParent {
+  flex-direction: column;
+}
+.dropdownOptionsParent {
+  align-self: stretch;
+  gap: 59.5px;
+}
+.dropdownContainer {
+  flex: 1;
+  gap: 99px;
+  min-width: 273px;
+  max-width: 100%;
+}
+.rectangleIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icondropdown {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+.icondropdown,
+.noVacancies {
+  position: relative;
+  z-index: 1;
+}
+.select {
+  text-decoration: none;
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+  display: inline-block;
+  min-width: 36px;
+}
+.dropdown {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-5xl) var(--padding-sm);
+  position: relative;
+}
+.dropdownContainerParent,
+.frameGroup,
+.instanceDropdown {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.instanceDropdown {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+  min-width: 273px;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-2);
+}
+.dropdownContainerParent,
+.frameGroup {
+  align-self: stretch;
+}
+.dropdownContainerParent {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-11xl);
+  font-size: var(--h3-size);
+  color: var(--mono-black);
+}
+.frameGroup {
+  flex-direction: column;
+  padding: 0 0 var(--padding-46xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+}
+.button {
+  height: 48px;
+  flex: 1;
+  min-width: 146px;
+}
+.button1 {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+}
+.buttonParent {
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-20xl);
+}
+.buttonParent,
+.frameParent,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameWrapper {
+  width: 454px;
+  flex-direction: row;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+}
+.frameParent {
+  width: 870px;
+  flex-direction: column;
+  gap: 66px;
+}
+.content,
+.desktop8 {
+  display: flex;
+  box-sizing: border-box;
+}
+.content {
+  width: 1400px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+.desktop8 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-257xl);
+  gap: 65px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 900px) {
+  .innerContentWrapper {
+    padding-left: var(--padding-10xl);
+    padding-right: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: var(--gap-14xl);
+  }
+  .desktop8 {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .elementContainer {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+  .information {
+    flex-wrap: wrap;
+  }
+  .frameGroup {
+    padding-bottom: 42px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ellipseParent {
+    flex-wrap: wrap;
+  }
+  .namePlaceholder {
+    width: 100%;
+    height: 7px;
+  }
+  .hayesAmber {
+    font-size: var(--font-size-3xl);
+  }
+  .dropdownOptionsParent {
+    gap: var(--gap-11xl);
+  }
+  .dropdownContainer {
+    gap: var(--gap-30xl);
+  }
+  .noVacancies {
+    font-size: var(--font-size-mid);
+  }
+  .buttonParent {
+    gap: var(--gap-lgi);
+  }
+  .desktop8,
+  .frameParent {
+    gap: var(--gap-base);
+  }
+}

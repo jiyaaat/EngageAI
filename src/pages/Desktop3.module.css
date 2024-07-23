@@ -1,0 +1,95 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.frameInner,
+.frameItem,
+.lineDiv {
+  position: absolute;
+  top: 10.5px;
+  left: 20px;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+  width: 253px;
+  height: 3px;
+  z-index: 1;
+}
+.frameInner,
+.lineDiv {
+  top: 11px;
+  left: 290px;
+}
+.lineDiv {
+  left: 560px;
+  border-top: 3px solid var(--color-gainsboro-100);
+}
+.frameGroup {
+  height: 21px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.frameParent,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-43xl) 0 var(--padding-42xl);
+  box-sizing: border-box;
+}
+.frameParent {
+  width: 954px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.contentParent,
+.desktop5 {
+  display: flex;
+  box-sizing: border-box;
+}
+.contentParent {
+  width: 1414px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+}
+.desktop5 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-264xl);
+  gap: var(--gap-57xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .frameWrapper {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 950px) {
+  .desktop5 {
+    gap: var(--gap-19xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .desktop5 {
+    gap: var(--gap-lgi);
+  }
+}

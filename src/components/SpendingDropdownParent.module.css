@@ -1,0 +1,123 @@
+.selectAllThat,
+.whatFactorsInfluence {
+  font-family: var(--p);
+}
+.selectAllThat {
+  font-weight: 300;
+}
+.whatFactorsInfluenceContainer {
+  position: relative;
+  font-size: var(--h4-size);
+  line-height: 25.6px;
+  color: var(--mono-gray-4);
+  text-align: left;
+}
+.purchaseDecisionsParent,
+.shoppingBehaviorParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.shoppingBehaviorParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.button {
+  height: 48px;
+  flex: 1;
+  min-width: 146px;
+}
+.button1 {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+}
+.buttonParent {
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-20xl);
+}
+.buttonParent,
+.shoppingBehaviorParentParent,
+.updatePropertyParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.updatePropertyParent {
+  width: 542px;
+  flex-direction: row;
+  padding: 0 var(--padding-30xl);
+  box-sizing: border-box;
+}
+.shoppingBehaviorParentParent {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-7xl);
+  min-width: 508px;
+}
+.div {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-211xl) 0 0;
+}
+.additionalInformation {
+  width: 144px;
+  position: relative;
+  font-size: var(--text-16-size);
+  line-height: 20px;
+  color: var(--mono-gray-4);
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.spendingDropdownParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-2xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+  font-family: var(--p);
+}
+@media screen and (max-width: 700px) {
+  .updatePropertyParent {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .shoppingBehaviorParentParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whatFactorsInfluenceContainer {
+    font-size: var(--font-size-mid);
+  }
+  .buttonParent {
+    flex-wrap: wrap;
+    gap: var(--gap-lgi);
+  }
+}

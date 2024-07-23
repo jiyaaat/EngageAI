@@ -1,0 +1,561 @@
+.startWith {
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+.engageai {
+  letter-spacing: -0.15em;
+  font-weight: 600;
+  color: var(--color-mediumslateblue);
+}
+.span {
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+.startWithEngageaiContainer1 {
+  width: 100%;
+}
+.startWithEngageaiContainer,
+.step1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+}
+.startWithEngageaiContainer {
+  width: 695px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.step1 {
+  flex: 1;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.userPromptStepOne {
+  width: 155px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+}
+.startAChat {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-13xl);
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-black);
+}
+.userPromptSteps {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  color: var(--color-mediumslateblue);
+}
+.exampleUserPrompts {
+  margin: 0;
+  width: 320px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.iconLightbulb {
+  height: 27.7px;
+  width: 17px;
+  position: relative;
+  flex-shrink: 0;
+}
+.suggestSimilarProducts {
+  width: 273px;
+  position: relative;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.examplePromptCardContentOn {
+  width: 264px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-5xs) var(--padding-7xs-3);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  white-space: nowrap;
+}
+.iconAlternateExchange {
+  height: 21.7px;
+  width: 19px;
+  position: relative;
+  flex-shrink: 0;
+}
+.whatIsReturn {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  flex-shrink: 0;
+}
+.returnPolicyContent {
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs-7);
+  box-sizing: border-box;
+  max-width: 152%;
+  flex-shrink: 0;
+}
+.examplePromptCardContentTh {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-6xs) var(--padding-6xs-3);
+  gap: var(--gap-4xs);
+}
+.examplePromptCardContentTw {
+  width: 243px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.examplePromptCardOne,
+.examplePromptCards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.examplePromptCardOne {
+  flex: 1;
+  gap: var(--gap-19xl);
+}
+.examplePromptCards {
+  align-self: stretch;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.iconCommentDots {
+  width: 27px;
+  height: 26px;
+  position: relative;
+  flex-shrink: 0;
+}
+.examplePromptCardContentFi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+}
+.explainHowThis {
+  width: 273px;
+  position: relative;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.examplePromptCardContentFo {
+  width: 303px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-4xs) var(--padding-9xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.examplePrompts,
+.examplePromptsList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.examplePromptsList {
+  align-self: stretch;
+  gap: var(--gap-lgi);
+  flex-shrink: 0;
+  font-size: var(--font-size-xl);
+}
+.examplePrompts {
+  width: 546px;
+  padding: 0 0 var(--padding-255xl-8);
+  box-sizing: border-box;
+  gap: var(--gap-2xl);
+}
+.step2 {
+  margin: 0;
+  height: 39.2px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.userPromptStepTwoNumber {
+  width: 151px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+  color: var(--color-mediumslateblue);
+}
+.sendTheCommand {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.userPromptStepTwoDescripti {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-3xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-13xl);
+}
+.iconCheckCircle {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.enhancedCustomerSatisfaction {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: calc(100% - 29px);
+}
+.benefitCardContentOne {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  max-width: 100%;
+}
+.iconCheckCircle1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.dataDrivenDecisions {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-family: inherit;
+}
+.benefitCardContentTwo,
+.benefitCardOne,
+.dataDrivenContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.dataDrivenContent {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  min-width: 304px;
+}
+.benefitCardContentTwo,
+.benefitCardOne {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-6xs);
+}
+.benefitCardOne {
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+.iconCheckCircle2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.scalability {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: calc(100% - 31px);
+}
+.benefitCardContentThree {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-6xs);
+}
+.benefitCardContentThree,
+.benefitCards,
+.benefits {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.benefitCards {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.benefits {
+  width: 527px;
+  flex-direction: row;
+  padding: 0 var(--padding-sm);
+  box-sizing: border-box;
+}
+.userPromptStepTwo {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-4xl);
+}
+.userPromptStepTwo,
+.userPromptStepsTwo,
+.userPromptsContainer,
+.userPromptsContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.userPromptStepsTwo {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+}
+.userPromptsContainer,
+.userPromptsContent {
+  flex-direction: column;
+}
+.userPromptsContent {
+  align-self: stretch;
+  gap: var(--gap-35xl);
+}
+.userPromptsContainer {
+  width: 698px;
+  padding: var(--padding-57xl) 0 0;
+  box-sizing: border-box;
+  min-width: 698px;
+}
+.frameChild,
+.frameItem {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameParent,
+.userPrompts {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  height: 1162px;
+  width: 409px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-159xl);
+  min-width: 409px;
+}
+.userPrompts {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-7xl);
+}
+.desktop1Inner,
+.startWithEngageaiParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.startWithEngageaiParent {
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-4xs) var(--padding-3xl) var(--padding-35xl)
+    var(--padding-33xl);
+  gap: var(--gap-30xl);
+}
+.desktop1Inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-base) var(--padding-35xl) var(--padding-17xl);
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--font-size-30xl);
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 1225px) {
+  .frameParent,
+  .userPromptsContainer {
+    flex: 1;
+  }
+  .userPrompts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .startWithEngageaiParent {
+    padding-left: var(--padding-7xl);
+    padding-top: var(--padding-xl);
+  }
+  .desktop1Inner,
+  .startWithEngageaiParent {
+    padding-bottom: var(--padding-16xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .userPromptsContainer {
+    padding-top: var(--padding-30xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .startWithEngageaiContainer {
+    font-size: var(--font-size-20xl);
+  }
+  .startAChat {
+    font-size: var(--font-size-7xl);
+  }
+  .examplePromptCardOne {
+    flex-wrap: wrap;
+    gap: var(--gap-lgi);
+  }
+  .sendTheCommand {
+    font-size: var(--font-size-7xl);
+  }
+  .benefitCardContentTwo {
+    flex-wrap: wrap;
+  }
+  .userPromptsContent {
+    gap: var(--gap-8xl);
+  }
+  .userPromptsContainer {
+    padding-top: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    min-width: 100%;
+  }
+  .startWithEngageaiParent {
+    gap: var(--gap-5xl);
+  }
+  .desktop1Inner,
+  .startWithEngageaiParent {
+    padding-bottom: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .startWithEngageaiContainer {
+    font-size: var(--font-size-10xl);
+  }
+  .step1 {
+    font-size: var(--h4-size);
+  }
+  .startAChat {
+    font-size: var(--font-size-lgi);
+  }
+  .exampleUserPrompts {
+    font-size: var(--h4-size);
+  }
+  .explainHowThis,
+  .whatIsReturn {
+    font-size: var(--text-16-size);
+  }
+  .examplePrompts {
+    padding-bottom: var(--padding-160xl);
+    box-sizing: border-box;
+  }
+  .step2 {
+    font-size: var(--h4-size);
+  }
+  .sendTheCommand {
+    font-size: var(--font-size-lgi);
+  }
+  .dataDrivenDecisions,
+  .enhancedCustomerSatisfaction,
+  .scalability {
+    font-size: var(--h4-size);
+  }
+  .frameParent {
+    gap: var(--gap-70xl);
+  }
+}

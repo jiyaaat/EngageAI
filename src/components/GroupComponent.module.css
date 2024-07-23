@@ -1,0 +1,57 @@
+.heroBackground {
+  height: 100%;
+  width: calc(100% - 18px);
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 18px;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) 0;
+  background-color: var(--color-whitesmoke-100);
+}
+.helloThereIm {
+  margin: 0;
+  height: 143px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  z-index: 1;
+}
+.heroSpacingIcon {
+  height: 89px;
+  width: 98px;
+  position: absolute;
+  margin: 0 !important;
+  top: 3px;
+  left: -73px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.heroBackgroundParent {
+  width: 523px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-lg) var(--padding-7xl);
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-10xl);
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 450px) {
+  .helloThereIm {
+    font-size: var(--font-size-4xl);
+  }
+}

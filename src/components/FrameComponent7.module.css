@@ -1,0 +1,110 @@
+.doYouLike,
+.placeholder {
+  position: relative;
+}
+.placeholder {
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.placeholderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+}
+.doYouLikeToReceiveNotificParent,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.doYouLikeToReceiveNotificParent {
+  gap: var(--gap-10xs);
+}
+.frameWrapper {
+  padding: 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.rectangleIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.noVacancies {
+  position: relative;
+  display: inline-block;
+  min-width: 34px;
+  z-index: 1;
+}
+.dropdownOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.icondropdown {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  z-index: 1;
+}
+.select {
+  width: 46px;
+  position: relative;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+  display: none;
+  z-index: 3;
+}
+.dropdown,
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.dropdown {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-base) var(--padding-sm)
+    var(--padding-5xl);
+  position: relative;
+  gap: var(--gap-xl);
+  color: var(--mono-gray-2);
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+@media screen and (max-width: 450px) {
+  .doYouLike,
+  .noVacancies {
+    font-size: var(--font-size-mid);
+  }
+}

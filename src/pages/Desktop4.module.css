@@ -1,0 +1,36 @@
+.desktop6,
+.leftContentWrapper {
+  display: flex;
+  box-sizing: border-box;
+}
+.leftContentWrapper {
+  width: 1414px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+}
+.desktop6 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-264xl);
+  gap: var(--gap-57xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 950px) {
+  .desktop6 {
+    gap: var(--gap-19xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .desktop6 {
+    gap: var(--gap-lgi);
+  }
+}

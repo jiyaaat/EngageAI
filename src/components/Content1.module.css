@@ -1,0 +1,70 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) 0;
+  background-color: var(--color-royalblue-200);
+  width: 100%;
+  height: 100%;
+}
+.lowerImageBlockInner {
+  height: 128px;
+  width: 505px;
+  position: relative;
+  max-width: 100%;
+}
+.lowerImageBlock {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.imageContainer {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.content,
+.imageContainer,
+.leftContent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.leftContent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-85xl);
+}
+.content {
+  width: 1399px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-30xl) var(--padding-49xl);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .leftContent {
+    gap: var(--gap-33xl);
+  }
+  .content {
+    padding-bottom: var(--padding-25xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .leftContent {
+    gap: var(--gap-7xl);
+  }
+}

@@ -1,0 +1,445 @@
+.desktop10Child,
+.productImage {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background-color: var(--color-mediumslateblue-200);
+}
+.desktop10Child {
+  position: absolute;
+  margin: 0 !important;
+  top: 150px;
+  left: 703px;
+  z-index: 1;
+}
+.productImage {
+  position: relative;
+}
+.frameChild {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+}
+.imageContainer,
+.imageContainerInner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+}
+.imageContainer {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xs);
+  min-width: 188px;
+}
+.frameItem {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-mediumslateblue-200);
+  box-sizing: border-box;
+}
+.productImagesInner {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+}
+.imageTwo {
+  height: 21px;
+  width: 21px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-mediumslateblue);
+}
+.productDetails,
+.productImages {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.productImages {
+  width: 561px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.productDetails {
+  width: 887px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.productInformation {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+}
+.productInfo {
+  width: 286px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-52xl);
+  box-sizing: border-box;
+}
+.wouldYouReccomend {
+  position: relative;
+}
+.recommendationQuestion {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-5xs);
+}
+.checkbox1 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 26px;
+}
+.checkbox,
+.privateLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 21px;
+}
+.checkbox2,
+.openLabel {
+  justify-content: flex-start;
+}
+.openLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox2 {
+  gap: var(--gap-xs);
+}
+.checkbox2,
+.checkboxContainer,
+.checkboxContainerWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.checkboxContainer {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.checkboxContainerWrapper {
+  width: 233px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs) var(--padding-3xs);
+  box-sizing: border-box;
+  font-size: var(--text-16-size);
+}
+.overallRatingOf {
+  position: relative;
+}
+.starsIcon,
+.starsIcon1,
+.starsIcon2,
+.starsIcon3,
+.vectorIcon {
+  height: 22.2px;
+  width: 23.2px;
+  position: relative;
+}
+.vectorIcon {
+  height: 23.9px;
+  width: 25px;
+  min-height: 24px;
+}
+.starContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17.8px;
+}
+.starRating {
+  flex-direction: row;
+  padding: 0 var(--padding-11xs);
+}
+.ratingQuestion,
+.ratingQuestionWrapper,
+.starRating {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ratingQuestion {
+  flex-direction: column;
+  gap: var(--gap-4xs);
+}
+.ratingQuestionWrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-7xs) 24.1px;
+}
+.additionalComments {
+  position: relative;
+}
+.fieldContainer,
+.recommendationQuestionParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.recommendationQuestionParent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--h4-size);
+}
+.fieldContainer {
+  flex: 1;
+  align-items: flex-end;
+  gap: 148px;
+  min-width: 223px;
+  max-width: 100%;
+}
+.feedback {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.formFields {
+  width: 531px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-25xl);
+  max-width: 100%;
+}
+.additionalInformation {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.formContainer {
+  width: 801px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.rectangleIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icondropdown {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+.noVacancies,
+.select {
+  width: 0;
+  display: inline-block;
+}
+.noVacancies {
+  height: 0;
+  position: relative;
+  line-height: 26.6px;
+  z-index: 1;
+}
+.select {
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+}
+.dropdown,
+.productDetailsParent,
+.productForm {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dropdown {
+  height: 230px;
+  flex-direction: row;
+  padding: var(--padding-85xl) var(--padding-5xl);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-2);
+}
+.productDetailsParent,
+.productForm {
+  flex-direction: column;
+  gap: var(--gap-4xl);
+  max-width: 100%;
+}
+.productDetailsParent {
+  align-items: flex-end;
+  gap: var(--gap-5xs);
+}
+.updateButtonContainerChild {
+  align-self: stretch;
+  flex: 1;
+  cursor: pointer;
+}
+.updateButtonContainer {
+  width: 199px;
+  height: 48px;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm);
+  box-sizing: border-box;
+}
+.content,
+.desktop10,
+.frameParent,
+.updateButtonContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.frameParent {
+  width: 902px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-89xl);
+  max-width: 100%;
+}
+.content,
+.desktop10 {
+  box-sizing: border-box;
+}
+.content {
+  width: 1412px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+.desktop10 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-247xl);
+  gap: var(--gap-39xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 900px) {
+  .formContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .frameParent {
+    gap: var(--gap-35xl);
+  }
+  .desktop10 {
+    gap: var(--gap-10xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .formFields {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .productInfo {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .additionalComments,
+  .overallRatingOf,
+  .wouldYouReccomend {
+    font-size: var(--font-size-mid);
+  }
+  .fieldContainer {
+    gap: var(--gap-55xl);
+  }
+  .formFields {
+    flex-wrap: wrap;
+  }
+  .noVacancies {
+    font-size: var(--font-size-mid);
+    line-height: 21px;
+  }
+  .frameParent {
+    gap: var(--gap-8xl);
+  }
+}

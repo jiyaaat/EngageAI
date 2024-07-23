@@ -1,0 +1,200 @@
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 37px;
+}
+.checkbox,
+.deskLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.deskLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox2 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.sharedOffices {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 50px;
+}
+.checkbox1,
+.checkboxOptions,
+.officesLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.officesLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox1,
+.checkboxOptions {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkboxOptions {
+  flex-direction: column;
+  gap: var(--gap-7xl);
+}
+.checkbox4 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--mono-gray-2);
+  box-sizing: border-box;
+}
+.privateDesks1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 42px;
+}
+.checkbox3,
+.deskName,
+.deskOption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.deskName {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox3,
+.deskOption {
+  flex-direction: row;
+}
+.checkbox3 {
+  gap: var(--gap-xs);
+}
+.deskOption {
+  padding: 0 var(--padding-9xs);
+}
+.groupInput1 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox5,
+.desksContainer,
+.officeLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.officeLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox5,
+.desksContainer {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.desksContainer {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-7xl);
+  min-width: 122px;
+}
+.checkbox7 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks2 {
+  position: relative;
+  line-height: 20px;
+}
+.deskName1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox6,
+.deskName1,
+.privateDesks {
+  justify-content: flex-start;
+}
+.checkbox6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.privateDesks {
+  width: 413px;
+  gap: var(--gap-32xl);
+}
+.checkboxContainer,
+.checkboxContainerWrapper,
+.privateDesks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.checkboxContainer {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.checkboxContainerWrapper {
+  width: 736px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-30xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+@media screen and (max-width: 950px) {
+  .checkboxContainerWrapper {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .checkboxContainer {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .privateDesks {
+    flex-wrap: wrap;
+    gap: var(--gap-6xl);
+  }
+}

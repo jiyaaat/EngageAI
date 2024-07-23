@@ -1,0 +1,281 @@
+.whichServiceWould {
+  margin: 0;
+  width: 1107px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 108%;
+}
+.whichServiceWouldYouLikeTWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 55px 0 288px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.iconChat {
+  width: 185px;
+  flex: 1;
+  position: relative;
+  max-height: 100%;
+  z-index: 1;
+}
+.smartChatbots {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+}
+.iconChatParent {
+  height: 503px;
+  width: 360px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-royalblue-100);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 96px var(--padding-mini) var(--padding-140xl) 72px;
+  box-sizing: border-box;
+  gap: 77px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.iconBarChart {
+  height: 134px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+.iconBarChartWrapper {
+  width: 223px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xl);
+  box-sizing: border-box;
+}
+.feedbackInsights {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+}
+.frameParent,
+.vectorIcon {
+  max-width: 100%;
+  overflow: hidden;
+}
+.frameParent {
+  width: 360px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-royalblue-100);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-76xl) var(--padding-xl) var(--padding-140xl)
+    var(--padding-45xl);
+  box-sizing: border-box;
+  gap: var(--gap-60xl);
+  cursor: pointer;
+}
+.vectorIcon {
+  height: 120px;
+  flex: 1;
+  position: relative;
+}
+.vectorWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-42xl) 0 var(--padding-34xl);
+}
+.chatbot,
+.recommendations {
+  margin: 0;
+}
+.recommendationsChatbot {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+}
+.frameGroup,
+.serviceOptions {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameGroup {
+  width: 360px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-royalblue-100);
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 109px var(--padding-24xl) var(--padding-86xl);
+  gap: 98px;
+  cursor: pointer;
+  text-align: center;
+}
+.serviceOptions {
+  width: 1313px;
+  border-radius: 30px;
+  background-color: var(--color-silver);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-153xl) var(--padding-5xl) var(--padding-153xl)
+    var(--padding-22xl);
+  min-height: 907px;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-10xl);
+  color: var(--color-white);
+  font-family: var(--text-16);
+}
+.content,
+.desktop12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.content {
+  width: 1388px;
+  align-items: flex-start;
+  padding: 0 0 0 var(--padding-xl);
+  gap: 69px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 38px;
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+.desktop12 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-86xl);
+  gap: 62px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .serviceOptions {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .serviceOptions {
+    padding-top: var(--padding-93xl);
+    padding-bottom: var(--padding-93xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .whichServiceWould {
+    font-size: 30px;
+  }
+  .whichServiceWouldYouLikeTWrapper {
+    padding-left: 144px;
+    padding-right: var(--padding-8xl);
+    box-sizing: border-box;
+  }
+  .frameGroup,
+  .frameParent,
+  .iconChatParent {
+    padding-top: var(--padding-43xl);
+    padding-bottom: var(--padding-84xl);
+    box-sizing: border-box;
+  }
+  .frameGroup {
+    padding-top: var(--padding-52xl);
+    padding-bottom: var(--padding-49xl);
+  }
+  .content {
+    gap: var(--gap-15xl);
+  }
+  .desktop12 {
+    gap: 31px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whichServiceWould {
+    font-size: var(--font-size-4xl);
+  }
+  .whichServiceWouldYouLikeTWrapper {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .smartChatbots {
+    font-size: var(--font-size-4xl);
+  }
+  .iconChatParent {
+    gap: var(--gap-19xl);
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .feedbackInsights {
+    font-size: var(--font-size-4xl);
+  }
+  .frameParent,
+  .vectorWrapper {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: var(--gap-20xl);
+  }
+  .vectorWrapper {
+    padding-right: var(--padding-xl);
+  }
+  .recommendationsChatbot {
+    font-size: var(--font-size-4xl);
+  }
+  .frameGroup {
+    gap: var(--gap-30xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .serviceOptions {
+    padding-top: var(--padding-54xl);
+    padding-bottom: var(--padding-54xl);
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-mid);
+  }
+  .desktop12 {
+    gap: var(--gap-mini);
+  }
+}

@@ -1,0 +1,89 @@
+.overallSatisfaction1 {
+  position: relative;
+}
+.overallSatisfaction {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 65px;
+}
+.checkbox,
+.openDesksLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.openDesksLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox2 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--mono-gray-2);
+  box-sizing: border-box;
+}
+.privateDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 39px;
+}
+.checkbox1,
+.privateDesksLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox1 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.overallSatisfactionCheckboxe,
+.overallSatisfactionLabel {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--text-16-size);
+}
+.overallSatisfactionLabel {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-14xl);
+  text-align: left;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+@media screen and (max-width: 450px) {
+  .overallSatisfaction1 {
+    font-size: var(--font-size-mid);
+  }
+}

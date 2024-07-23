@@ -1,0 +1,64 @@
+.frameChild {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.yesplease {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+  z-index: 2;
+}
+.frameItem {
+  height: 36px;
+  width: 1px;
+  position: relative;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.confirmation,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameParent {
+  width: 1318px;
+  padding: var(--padding-7xs) var(--padding-12xl) var(--padding-38xl);
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-10xl);
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+.confirmation {
+  align-self: stretch;
+  padding: 0 var(--padding-33xl);
+}
+@media screen and (max-width: 750px) {
+  .confirmation {
+    padding-left: var(--padding-7xl);
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .yesplease {
+    font-size: var(--font-size-4xl);
+  }
+}

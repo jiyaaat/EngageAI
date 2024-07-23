@@ -1,0 +1,271 @@
+.whatIsEngageai {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  font-family: inherit;
+}
+.frameChild {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: -1px;
+}
+.engageAIExplanationTitle,
+.engageAIExplanationTitleInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.engageAIExplanationTitleInner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+}
+.engageAIExplanationTitle {
+  width: 752px;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-xl);
+  gap: var(--gap-30xl);
+}
+.answersToYour,
+.faqs {
+  margin: 0;
+}
+.faqs {
+  color: var(--color-mediumslateblue);
+}
+.answersToYourContainer {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+}
+.answersToYourFaqsWrapper {
+  width: 605px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) 0 0;
+  box-sizing: border-box;
+  min-width: 605px;
+  max-width: 100%;
+}
+.howToDelete {
+  margin: 0;
+  width: 732px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 108%;
+}
+.howToDeleteChatHistoryWrapper {
+  width: 681px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.vectorIcon {
+  height: 32px;
+  width: 34px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  box-sizing: border-box;
+  row-gap: 20px;
+}
+.fAQItem,
+.fAQItemChild,
+.frameGroup {
+  align-self: stretch;
+  max-width: 100%;
+}
+.fAQItemChild {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: -1px;
+}
+.fAQItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.howToTurn {
+  width: 732px;
+  position: relative;
+  letter-spacing: -0.05em;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 108%;
+}
+.howToTurnOffPersonalisatioWrapper {
+  width: 681px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-22xl);
+  box-sizing: border-box;
+  min-height: 81px;
+  max-width: 100%;
+}
+.vectorIcon1 {
+  height: 32px;
+  width: 34px;
+  position: relative;
+  flex-shrink: 0;
+}
+.fAQItemItem,
+.frameContainer {
+  align-self: stretch;
+  max-width: 100%;
+}
+.frameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  box-sizing: border-box;
+  row-gap: 20px;
+}
+.fAQItemItem {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  margin-top: -1px;
+}
+.fAQItem1,
+.fAQList {
+  flex-direction: column;
+}
+.fAQItem1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.fAQList {
+  flex: 1;
+  align-items: flex-start;
+  gap: var(--gap-lg);
+  min-width: 476px;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+}
+.engageAIExplanation,
+.fAQList,
+.frameParent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-mid);
+  text-align: center;
+  font-size: var(--font-size-30xl);
+}
+.engageAIExplanation {
+  width: 1374px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 var(--padding-xl) var(--padding-102xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-4xs);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 1225px) {
+  .answersToYourFaqsWrapper {
+    flex: 1;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .whatIsEngageai {
+    font-size: var(--font-size-7xl);
+  }
+  .engageAIExplanationTitle {
+    gap: var(--gap-5xl);
+  }
+  .answersToYourContainer {
+    font-size: var(--font-size-20xl);
+  }
+  .answersToYourFaqsWrapper {
+    min-width: 100%;
+  }
+  .howToDelete {
+    font-size: var(--font-size-7xl);
+  }
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+  .howToTurn {
+    font-size: var(--font-size-7xl);
+  }
+  .frameContainer {
+    flex-wrap: wrap;
+  }
+  .fAQList {
+    min-width: 100%;
+  }
+  .engageAIExplanation {
+    padding-bottom: var(--padding-60xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whatIsEngageai {
+    font-size: var(--font-size-lgi);
+  }
+  .answersToYourContainer {
+    font-size: var(--font-size-10xl);
+  }
+  .howToDelete,
+  .howToTurn {
+    font-size: var(--font-size-lgi);
+  }
+}

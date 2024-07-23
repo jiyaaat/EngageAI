@@ -1,0 +1,857 @@
+.desktop9Child,
+.frameChild {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background-color: var(--color-mediumslateblue-200);
+}
+.desktop9Child {
+  position: absolute;
+  margin: 0 !important;
+  top: 150px;
+  left: 703px;
+  z-index: 2;
+}
+.frameChild {
+  position: relative;
+}
+.frameItem {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+}
+.ellipseParent,
+.lineWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+  min-width: 162px;
+}
+.ellipseParent {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid) 0 0;
+  gap: var(--gap-11xs);
+  min-width: 188px;
+}
+.frameInner {
+  align-self: stretch;
+  height: 3px;
+  position: relative;
+  border-top: 3px solid var(--color-mediumslateblue-200);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.lineContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+}
+.ellipseDiv {
+  height: 21px;
+  width: 21px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-100);
+}
+.frameParent,
+.productOptionsInner {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.productOptionsInner {
+  width: 685px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-43xl);
+  box-sizing: border-box;
+}
+.productInformation {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+}
+.productQuality {
+  position: relative;
+}
+.productQualityLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+  font-size: var(--h4-size);
+}
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 65px;
+}
+.checkbox,
+.openDesksWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.openDesksWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox2 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--mono-gray-2);
+  box-sizing: border-box;
+}
+.privateDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 39px;
+}
+.checkbox1,
+.privateDesksWrapper,
+.productQualityCheckboxRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox1,
+.productQualityCheckboxRow {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.productQualityCheckboxRow {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.easeOfUse {
+  position: relative;
+  display: inline-block;
+  min-width: 124px;
+}
+.easeOfUseOptions,
+.productQualityCheckboxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.easeOfUseOptions {
+  flex-direction: row;
+  padding: 0 var(--padding-5xs);
+  font-size: var(--h4-size);
+}
+.productQualityCheckboxes {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-31xl);
+}
+.groupInput1 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 65px;
+}
+.checkbox3,
+.openDesksContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.openDesksContainer {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox3 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox5 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--mono-gray-2);
+  box-sizing: border-box;
+}
+.privateDesks1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 39px;
+}
+.checkbox4,
+.easeOfUseCheckboxRow,
+.privateDesksContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksContainer {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox4,
+.easeOfUseCheckboxRow {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.easeOfUseCheckboxRow {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.easeOfUseCheckboxes {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-10xs);
+}
+.easeOfUseCheckboxes,
+.productQualityOptions,
+.valueForMoneyOptions {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.productQualityOptions {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-14xl);
+}
+.valueForMoneyOptions {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-11xs) 0 var(--padding-12xs);
+}
+.overallSatisfactionOptions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 64px;
+}
+.satisfactionOptions {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-10xl) 0 0;
+  text-align: left;
+}
+.productInformationLabel {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 97px;
+}
+.checkbox7 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks2 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 58px;
+}
+.checkbox6,
+.privateDesksFrame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksFrame {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox6 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox9 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks3 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 58px;
+}
+.checkbox8,
+.frameDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameDiv {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox8 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox11 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks4 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 58px;
+}
+.checkbox10,
+.checkboxWrapper,
+.privateDesksWrapper1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksWrapper1 {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox10,
+.checkboxWrapper {
+  flex-direction: row;
+}
+.checkbox10 {
+  gap: var(--gap-xs);
+}
+.checkboxWrapper {
+  padding: 0 0 var(--padding-sm) var(--padding-10xs);
+}
+.checkbox13 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks5 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 58px;
+}
+.privateDesksWrapper2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox12 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox12,
+.checkboxGroup,
+.checkboxParent,
+.feedbackCheckbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.feedbackCheckbox {
+  flex-direction: row;
+  padding: 0 var(--padding-11xs) 0 var(--padding-12xs);
+}
+.checkboxGroup,
+.checkboxParent {
+  flex-direction: column;
+  gap: var(--gap-89xl);
+}
+.checkboxParent {
+  align-items: flex-end;
+  gap: var(--gap-103xl);
+}
+.feedback {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+}
+.feedbackTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 34px 0 0;
+}
+.groupInput2 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 34px;
+}
+.checkbox14,
+.privateOfficesWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox14 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.groupInput3 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 34px;
+}
+.checkbox15,
+.privateOfficesContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesContainer {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox15 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.groupInput4 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices2 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 34px;
+}
+.checkbox16,
+.officesCheckboxC,
+.privateOfficesFrame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesFrame {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox16,
+.officesCheckboxC {
+  flex-direction: row;
+}
+.checkbox16 {
+  gap: var(--gap-xs);
+}
+.officesCheckboxC {
+  padding: 0 0 var(--padding-sm) var(--padding-10xs);
+}
+.groupInput5 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices3 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 34px;
+}
+.privateOfficesWrapper1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox17 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox17,
+.officesCheckboxB,
+.officesCheckboxD {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.officesCheckboxD {
+  flex-direction: row;
+  padding: 0 var(--padding-11xs) 0 var(--padding-12xs);
+}
+.officesCheckboxB {
+  flex-direction: column;
+  gap: var(--gap-89xl);
+}
+.feedbackOptions {
+  flex-direction: column;
+  gap: var(--gap-103xl);
+  text-align: left;
+}
+.additionalOptions,
+.feedbackOptions,
+.feedbackTitleParent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.feedbackTitleParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 155px;
+  margin-left: -36px;
+  text-align: center;
+}
+.additionalOptions {
+  width: 258px;
+  flex-direction: row;
+  padding: 0 var(--padding-mini) 0 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+.additionalInformation {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+}
+.additionalInformationTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-8xl);
+}
+.groupInput6 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices4 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 70px;
+}
+.checkbox18,
+.privateOfficesWrapper2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesWrapper2 {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox18 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.groupInput7 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices5 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 70px;
+}
+.checkbox19,
+.privateOfficesWrapper3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesWrapper3 {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox19 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.groupInput8 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices6 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 70px;
+}
+.checkbox20,
+.officesCheckboxG,
+.privateOfficesWrapper4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesWrapper4 {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox20,
+.officesCheckboxG {
+  flex-direction: row;
+}
+.checkbox20 {
+  gap: var(--gap-xs);
+}
+.officesCheckboxG {
+  padding: 0 0 var(--padding-sm) var(--padding-10xs);
+}
+.groupInput9 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices7 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 70px;
+}
+.checkbox21,
+.officesCheckboxH,
+.privateOfficesWrapper5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesWrapper5 {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox21,
+.officesCheckboxH {
+  flex-direction: row;
+}
+.checkbox21 {
+  gap: var(--gap-xs);
+}
+.officesCheckboxH {
+  padding: 0 var(--padding-11xs) 0 var(--padding-12xs);
+}
+.additionalInformationOptions,
+.officesCheckboxF {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-89xl);
+}
+.additionalInformationOptions {
+  align-items: flex-end;
+  gap: var(--gap-103xl);
+  text-align: left;
+}
+.additionalInformationTitleParent {
+  width: 171px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 135px;
+}
+.productInformationLabelParent,
+.productOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-31xl);
+}
+.productOptions {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-5xs);
+  max-width: 100%;
+}
+.button {
+  height: 48px;
+  flex: 1;
+  min-width: 146px;
+}
+.button1 {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+}
+.updateButtonWrapper {
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-20xl);
+}
+.footer,
+.productInfoContainer,
+.updateButtonWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.footer {
+  width: 468px;
+  flex-direction: row;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+}
+.productInfoContainer {
+  flex-direction: column;
+  gap: 150px;
+}
+.desktop9,
+.productInfoContainerWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.productInfoContainerWrapper {
+  width: 1313px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+.desktop9 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-247xl);
+  gap: var(--gap-39xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 800px) {
+  .productOptionsInner {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+  .productInformationLabelParent {
+    flex-wrap: wrap;
+  }
+  .productInfoContainer {
+    gap: 75px;
+  }
+  .desktop9 {
+    gap: var(--gap-10xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .ellipseParent {
+    flex-wrap: wrap;
+  }
+  .easeOfUse,
+  .productQuality {
+    font-size: var(--font-size-mid);
+  }
+  .productInformationLabel {
+    gap: 48px;
+  }
+  .productInformationLabelParent {
+    gap: var(--gap-6xl);
+  }
+  .updateButtonWrapper {
+    gap: var(--gap-lgi);
+  }
+  .productInfoContainer {
+    gap: var(--gap-18xl);
+  }
+}

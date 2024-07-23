@@ -1,0 +1,209 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.apsAConcepoDoProjetoEm,
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 10.5px;
+  left: 20px;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+  width: 253px;
+  height: 3px;
+  z-index: 1;
+}
+.apsAConcepoDoProjetoEm,
+.frameInner {
+  top: 11px;
+  left: 290px;
+}
+.apsAConcepoDoProjetoEm {
+  left: 560px;
+  border-top: 3px solid var(--color-gainsboro-100);
+}
+.frameGroup {
+  height: 21px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-43xl) 0 var(--padding-42xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.selectAllThat,
+.whatFactorsInfluence {
+  font-family: var(--p);
+}
+.selectAllThat {
+  font-weight: 300;
+}
+.whatFactorsInfluenceContainer {
+  position: relative;
+  font-size: var(--h4-size);
+  line-height: 25.6px;
+  color: var(--mono-gray-4);
+  text-align: left;
+}
+.influenceQuestion {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.button {
+  height: 48px;
+  flex: 1;
+  min-width: 146px;
+}
+.button1 {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+}
+.updateButtons {
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-20xl);
+}
+.buttonContainer,
+.dropdownContainer,
+.updateButtons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.buttonContainer {
+  width: 542px;
+  flex-direction: row;
+  padding: 0 var(--padding-30xl);
+  box-sizing: border-box;
+}
+.dropdownContainer {
+  margin: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-7xl);
+  min-width: 508px;
+}
+.div {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-211xl) 0 0;
+}
+.additionalInformation {
+  width: 144px;
+  position: relative;
+  font-size: var(--text-16-size);
+  line-height: 20px;
+  color: var(--mono-gray-4);
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.dropdownContainerParent,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.dropdownContainerParent {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-2xs);
+}
+.frameParent {
+  width: 954px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.content,
+.desktop4 {
+  display: flex;
+  box-sizing: border-box;
+}
+.content {
+  width: 1414px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+  font-family: var(--p);
+}
+.desktop4 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-264xl);
+  gap: var(--gap-57xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .frameWrapper {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 950px) {
+  .desktop4 {
+    gap: var(--gap-19xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .buttonContainer {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .dropdownContainer {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .whatFactorsInfluenceContainer {
+    font-size: var(--font-size-mid);
+  }
+  .updateButtons {
+    flex-wrap: wrap;
+  }
+  .desktop4,
+  .updateButtons {
+    gap: var(--gap-lgi);
+  }
+}

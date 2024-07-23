@@ -1,0 +1,70 @@
+.checkbox1 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  border: 1px solid var(--mono-gray-2);
+  box-sizing: border-box;
+}
+.privateDesks {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 124px;
+}
+.checkbox,
+.checkboxWrapper,
+.privateDesksLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox,
+.checkboxWrapper {
+  flex-direction: row;
+}
+.checkbox {
+  gap: var(--gap-xs);
+}
+.checkboxWrapper {
+  padding: 0 var(--padding-9xs);
+}
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.privateOffices {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox2,
+.frameParent,
+.privateOfficesLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateOfficesLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox2,
+.frameParent {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.frameParent {
+  flex-direction: column;
+  gap: var(--gap-7xl);
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}

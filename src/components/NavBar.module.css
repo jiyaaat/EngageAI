@@ -1,0 +1,113 @@
+.engageai {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.15em;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  min-width: 127px;
+  white-space: nowrap;
+}
+.engageAILogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-5) 0 0;
+}
+.aboutUs,
+.blog,
+.home,
+.services {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  display: inline-block;
+}
+.home {
+  color: var(--color-mediumslateblue);
+  min-width: 48px;
+}
+.aboutUs,
+.blog,
+.services {
+  color: inherit;
+}
+.aboutUs {
+  min-width: 66px;
+  cursor: pointer;
+}
+.blog,
+.services {
+  min-width: 63px;
+}
+.services {
+  min-width: 62px;
+  cursor: pointer;
+}
+.navBarInfo,
+.navbarInfo {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.navBarInfo {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--color-black1);
+  font-family: var(--text-16);
+}
+.navbarInfo {
+  width: 419px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.button {
+  height: 44px;
+  width: 157px;
+}
+.navBar {
+  align-self: stretch;
+  backdrop-filter: blur(12px);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-5xl) var(--padding-108xl) var(--padding-5xl)
+    var(--padding-51xl);
+  box-sizing: border-box;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-mediumslateblue);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 750px) {
+  .navbarInfo {
+    display: none;
+  }
+  .navBar {
+    padding-left: var(--padding-16xl);
+    padding-right: var(--padding-44xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navBar {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

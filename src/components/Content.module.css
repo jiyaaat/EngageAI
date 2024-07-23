@@ -1,0 +1,98 @@
+.questionBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs) var(--br-3xs) var(--br-3xs) 0;
+  background-color: var(--color-royalblue-200);
+}
+.canUFind {
+  margin: 0;
+  width: 470px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.heroQuestion,
+.questionBackgroundParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.questionBackgroundParent {
+  width: 505px;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-4xs) var(--padding-27xl);
+  box-sizing: border-box;
+  position: relative;
+}
+.heroQuestion {
+  align-self: stretch;
+  justify-content: flex-end;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.content,
+.frameParent,
+.leftContent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.leftContent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-85xl);
+}
+.content {
+  width: 1399px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-30xl) var(--padding-49xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-10xl);
+  color: var(--color-black);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .leftContent {
+    gap: var(--gap-33xl);
+  }
+  .content {
+    padding-bottom: var(--padding-25xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .canUFind {
+    font-size: var(--font-size-4xl);
+  }
+  .leftContent {
+    gap: var(--gap-7xl);
+  }
+}

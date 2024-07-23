@@ -1,0 +1,64 @@
+.groupInput {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+}
+.openDesks {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox,
+.openDesksWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.openDesksWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox2 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.sharedOffices {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 117px;
+}
+.checkbox1,
+.checkboxRow,
+.sharedOfficesWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sharedOfficesWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox1,
+.checkboxRow {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkboxRow {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-base);
+  min-width: 144px;
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}

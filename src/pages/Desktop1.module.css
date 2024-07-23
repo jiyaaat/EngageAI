@@ -1,0 +1,946 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.frameInner,
+.frameItem,
+.lineDiv {
+  position: absolute;
+  top: 10.5px;
+  left: 20px;
+  border-top: 3px solid var(--color-mediumslateblue-100);
+  box-sizing: border-box;
+  width: 253px;
+  height: 3px;
+  z-index: 1;
+}
+.frameInner,
+.lineDiv {
+  top: 11px;
+  left: 290px;
+  border-top: 3px solid var(--color-gainsboro-100);
+}
+.lineDiv {
+  left: 560px;
+}
+.frameParent {
+  height: 21px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.contentLeftInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-43xl) 0 var(--padding-42xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.basicInformation {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.shoppingBehaviour {
+  text-decoration: none;
+  position: relative;
+  line-height: 20px;
+  color: inherit;
+}
+.basicInfoHeader,
+.basicInfoHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.basicInfoHeader {
+  width: 426px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.basicInfoHeaderWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-lgi);
+  box-sizing: border-box;
+  text-align: center;
+}
+.div,
+.name {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 40px;
+}
+.div {
+  min-width: 7px;
+}
+.nameInput,
+.nameInputGreatGrandparent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nameInput {
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+  color: var(--color-red);
+}
+.nameInputGreatGrandparent {
+  flex-direction: row;
+  gap: var(--gap-12xs);
+}
+.hayesAmber {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.displayName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 28px;
+  font-size: var(--h3-size);
+  color: var(--mono-black);
+}
+.location {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 68px;
+}
+.nameInputGrandparent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.edit1 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 28px;
+}
+.edit,
+.nameInputParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.edit {
+  flex-direction: column;
+  padding: var(--padding-11xl) 0 0;
+  font-size: var(--text-16-size);
+}
+.nameInputParent {
+  flex-direction: row;
+  gap: var(--gap-2xl);
+}
+.groupChild {
+  height: 56px;
+  width: 420px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  display: none;
+  max-width: 100%;
+}
+.locationIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--primary-highlight);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.mapPinIcon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  z-index: 2;
+}
+.locationIconParent {
+  height: 36px;
+  width: 36px;
+  position: relative;
+}
+.thStreetSan {
+  position: relative;
+  z-index: 1;
+}
+.group,
+.nameInputParentParent,
+.thStreetSanFranciscoCaWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.thStreetSanFranciscoCaWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 0;
+  min-width: 220px;
+}
+.group,
+.nameInputParentParent {
+  align-self: stretch;
+}
+.group {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-base);
+  gap: var(--gap-xs);
+  font-size: var(--h4-size);
+  color: var(--mono-gray-4);
+}
+.nameInputParentParent {
+  flex-direction: column;
+  padding: 0 0 var(--padding-5xs);
+  gap: var(--gap-5xs);
+}
+.interests,
+.interestsHeaderItems {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 72px;
+}
+.interestsHeaderItems {
+  color: var(--color-red);
+  min-width: 7px;
+}
+.interestsHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.whatTypesOf {
+  position: relative;
+}
+.interestsHeaderParent,
+.whatTypesOfProductsAreYouWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.whatTypesOfProductsAreYouWrapper {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+  font-size: var(--h4-size);
+  color: var(--mono-gray-4);
+}
+.interestsHeaderParent {
+  flex-direction: column;
+  gap: var(--gap-smi);
+}
+.checkboxRowParent,
+.frameDiv {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.checkboxRowParent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 61px;
+  max-width: 100%;
+}
+.frameDiv {
+  width: 406px;
+  padding: 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.frameContainer,
+.frameDiv,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameContainer {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frameWrapper {
+  width: 476px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xl) var(--padding-7xs);
+  box-sizing: border-box;
+  font-size: var(--h5-size);
+  color: var(--mono-gray-3);
+}
+.rectangleIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.cityName {
+  position: relative;
+  z-index: 1;
+}
+.label {
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--text-16-size);
+  line-height: 20px;
+  color: var(--mono-gray-3);
+}
+.input,
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.input {
+  flex: 1;
+  padding: var(--padding-mid) var(--padding-5xl) var(--padding-sm);
+  position: relative;
+}
+.inputWrapper {
+  width: 352px;
+  padding: 0 var(--padding-12xs);
+}
+.div1 {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.cityDropdownValue {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-31xl);
+  font-size: var(--h5-size);
+  color: var(--color-red);
+}
+.rectangleIcon1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.noVacancies {
+  position: relative;
+  z-index: 1;
+}
+.noVacanciesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.icondropdown {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  z-index: 1;
+}
+.select {
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+  display: inline-block;
+  min-width: 49px;
+}
+.div2,
+.dropdown {
+  position: relative;
+}
+.dropdown {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-base) var(--padding-sm)
+    var(--padding-5xl);
+  gap: var(--gap-xl);
+}
+.div2 {
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.vacancyDropdownInput {
+  width: 279px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+}
+.vacancyDropdownParent,
+.vacancyDropdownParentWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.vacancyDropdownParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-mid);
+}
+.vacancyDropdownParentWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+}
+.rectangleIcon2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icondropdown1 {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+.icondropdown1,
+.noVacancies1 {
+  position: relative;
+  z-index: 1;
+}
+.select1 {
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+}
+.dropdown1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mid) var(--padding-5xl) var(--padding-sm);
+  position: relative;
+}
+.cityDropdownParent,
+.cityDropdownParentWrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.cityDropdownParent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 13.7px;
+}
+.cityDropdownParentWrapper {
+  width: 475px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xl);
+  box-sizing: border-box;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-2);
+}
+.button {
+  height: 48px;
+  flex: 1;
+  min-width: 146px;
+}
+.button1 {
+  height: 48px;
+  width: 180px;
+  cursor: pointer;
+}
+.frameGroup,
+.updateButtons {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.updateButtons {
+  width: 444px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-20xl);
+}
+.frameGroup {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-17xl);
+  min-width: 324px;
+}
+.placeholder1 {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 7px;
+}
+.contactPreferencesTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-76xl) 0 0;
+}
+.contactPreferences {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  font-size: var(--text-16-size);
+  line-height: 20px;
+  color: var(--mono-gray-4);
+  text-align: center;
+}
+.placeholder {
+  width: 156px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-10xs);
+  min-width: 156px;
+}
+.additionalInformation {
+  width: 144px;
+  position: relative;
+  font-size: var(--text-16-size);
+  line-height: 20px;
+  color: var(--mono-gray-4);
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.contactPreferencesParentInner,
+.placeholderParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.placeholderParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.contactPreferencesParentInner {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-13xl);
+  box-sizing: border-box;
+}
+.rectangleIcon3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.icondropdown2 {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+.icondropdown2,
+.noVacancies2 {
+  position: relative;
+  z-index: 1;
+}
+.select2 {
+  position: absolute;
+  margin: 0 !important;
+  top: -25px;
+  left: 0;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+  display: inline-block;
+  min-width: 25px;
+}
+.contactPreferencesParent,
+.dropdown2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.dropdown2 {
+  width: 420px;
+  flex-direction: row;
+  padding: var(--padding-mid) var(--padding-5xl) var(--padding-sm);
+  box-sizing: border-box;
+  position: relative;
+  font-size: var(--h4-size);
+  color: var(--mono-gray-2);
+}
+.contactPreferencesParent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-smi);
+}
+.checkbox1 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox,
+.privateDeskLabels {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDeskLabels {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox3 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks1 {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox2,
+.privateDesksCheckboxes,
+.privateDesksWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.privateDesksWrapper {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox2,
+.privateDesksCheckboxes {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.privateDesksCheckboxes {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.checkbox5 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks2 {
+  position: relative;
+  line-height: 20px;
+}
+.checkbox4,
+.firstAdditionalLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.firstAdditionalLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox4 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.checkbox7 {
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  position: relative;
+  border-radius: var(--br-9xs);
+}
+.privateDesks3 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 119px;
+}
+.secondAdditionalLabel {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.checkbox6,
+.secondAdditionalCheckbox,
+.secondAdditionalLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkbox6 {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.secondAdditionalCheckbox {
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+}
+.additionalCheckboxes {
+  flex-direction: row;
+  gap: var(--gap-2xl);
+}
+.additionalCheckboxes,
+.doubleCheckbox,
+.doubleCheckboxWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.doubleCheckbox {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-mini);
+}
+.doubleCheckboxWrapper {
+  width: 424px;
+  flex-direction: row;
+  padding: 0 var(--padding-9xs);
+  box-sizing: border-box;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+}
+.contactPreferencesParentParent {
+  width: 455px;
+  flex-direction: column;
+  gap: 179px;
+  min-width: 455px;
+  font-size: var(--h5-size);
+  color: var(--color-red);
+}
+.contactPreferencesParentParent,
+.contentLeft,
+.contentRight {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.contentRight {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-12xs);
+}
+.contentLeft {
+  width: 954px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.content,
+.desktop3 {
+  display: flex;
+  box-sizing: border-box;
+}
+.content {
+  width: 1414px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+.desktop3 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-257xl);
+  gap: var(--gap-57xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .contentLeftInner {
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 950px) {
+  .contactPreferencesParentParent {
+    flex: 1;
+  }
+  .contentRight {
+    flex-wrap: wrap;
+  }
+  .desktop3 {
+    gap: var(--gap-19xl);
+  }
+}
+@media screen and (max-width: 700px) {
+  .frameGroup {
+    gap: var(--gap-lg);
+  }
+  .contactPreferencesParentParent {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .basicInfoHeader {
+    flex-wrap: wrap;
+  }
+  .hayesAmber {
+    font-size: var(--font-size-3xl);
+  }
+  .thStreetSan {
+    font-size: var(--font-size-mid);
+  }
+  .group {
+    flex-wrap: wrap;
+  }
+  .whatTypesOf {
+    font-size: var(--font-size-mid);
+  }
+  .checkboxRowParent {
+    flex-wrap: wrap;
+    gap: var(--gap-11xl);
+  }
+  .cityName,
+  .noVacancies,
+  .noVacancies1 {
+    font-size: var(--font-size-mid);
+  }
+  .updateButtons {
+    flex-wrap: wrap;
+    gap: var(--gap-lgi);
+  }
+  .placeholder {
+    flex: 1;
+  }
+  .placeholderParent {
+    flex-wrap: wrap;
+  }
+  .noVacancies2 {
+    font-size: var(--font-size-mid);
+  }
+  .additionalCheckboxes,
+  .privateDesksCheckboxes {
+    flex-wrap: wrap;
+  }
+  .contactPreferencesParentParent {
+    gap: var(--gap-70xl);
+  }
+  .desktop3 {
+    gap: var(--gap-lgi);
+  }
+}

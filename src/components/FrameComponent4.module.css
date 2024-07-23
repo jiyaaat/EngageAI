@@ -1,0 +1,205 @@
+.basicInformation {
+  width: 144px;
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.shoppingBehaviour {
+  text-decoration: none;
+  position: relative;
+  line-height: 20px;
+  color: inherit;
+}
+.basicInfoTitle,
+.infoTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.infoTitle {
+  width: 426px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.basicInfoTitle {
+  align-self: stretch;
+  justify-content: flex-start;
+}
+.div,
+.howOftenDo {
+  position: relative;
+}
+.div {
+  font-size: var(--h5-size);
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-red);
+  display: inline-block;
+  min-width: 7px;
+}
+.frequencyDropdown,
+.frequencyDropdownWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frequencyDropdown {
+  gap: var(--gap-8xs);
+}
+.frequencyDropdownWrapper {
+  padding: 0 var(--padding-11xs);
+}
+.rectangleIcon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.noVacancies {
+  position: relative;
+  display: inline-block;
+  min-width: 76px;
+  z-index: 1;
+}
+.vacancyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.icondropdown {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  z-index: 1;
+}
+.select {
+  width: 46px;
+  position: relative;
+  font-size: var(--h5-size);
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mono-gray-3);
+  display: none;
+  z-index: 3;
+}
+.dropdown,
+.frequencyQuestion {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.dropdown {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-base) var(--padding-base) var(--padding-sm)
+    var(--padding-5xl);
+  position: relative;
+  gap: var(--gap-xl);
+  color: var(--mono-gray-2);
+}
+.frequencyQuestion {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.div1,
+.factors {
+  position: relative;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 59px;
+}
+.div1 {
+  color: var(--color-red);
+  min-width: 7px;
+}
+.factorsParent {
+  width: 217px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--h5-size);
+  color: var(--mono-gray-3);
+}
+.basicInfo,
+.shoppingFrequency {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.shoppingFrequency {
+  width: 420px;
+  align-items: flex-start;
+  gap: var(--gap-7xl);
+  text-align: left;
+  font-size: var(--h4-size);
+}
+.basicInfo {
+  flex: 1;
+  align-items: flex-end;
+  gap: var(--gap-28xl);
+}
+.contactPreferences {
+  text-decoration: none;
+  width: 146px;
+  position: relative;
+  line-height: 20px;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.basicInfoParent {
+  width: 687px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-53xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--text-16-size);
+  color: var(--mono-gray-4);
+  font-family: var(--p);
+}
+@media screen and (max-width: 700px) {
+  .basicInfo {
+    gap: var(--gap-4xl);
+  }
+  .basicInfoParent {
+    flex-wrap: wrap;
+    gap: var(--gap-17xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .infoTitle {
+    flex-wrap: wrap;
+  }
+  .howOftenDo,
+  .noVacancies {
+    font-size: var(--font-size-mid);
+  }
+  .basicInfoParent {
+    gap: var(--gap-lg);
+  }
+}

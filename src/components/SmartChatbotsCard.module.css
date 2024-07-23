@@ -1,0 +1,107 @@
+.iconChat {
+  height: 95.2px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.smartChatbotsIcon {
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-46xl);
+  box-sizing: border-box;
+}
+.smartChatbots {
+  margin: 0;
+  height: 39px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  letter-spacing: -0.05em;
+}
+.explore,
+.loremIpsumDolor,
+.vectorIcon {
+  position: relative;
+  z-index: 1;
+}
+.explore {
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 57px;
+}
+.vectorIcon {
+  width: 55px;
+  height: 3px;
+}
+.smartChatbotsButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-9xs);
+  color: var(--color-black1);
+}
+.smartChatbotsDescription {
+  align-self: stretch;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--text-16-size);
+  color: var(--color-darkslategray);
+}
+.smartChatbotsCard,
+.smartChatbotsContent,
+.smartChatbotsDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.smartChatbotsContent {
+  align-self: stretch;
+  gap: var(--gap-13xl);
+}
+.smartChatbotsCard {
+  width: 300px;
+  gap: var(--gap-46xl-8);
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-mediumslateblue);
+  font-family: var(--text-16);
+}
+@media screen and (max-width: 750px) {
+  .smartChatbots {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .smartChatbotsIcon {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .smartChatbots {
+    font-size: var(--font-size-lgi);
+  }
+  .smartChatbotsContent {
+    gap: var(--gap-base);
+  }
+  .smartChatbotsCard {
+    gap: var(--gap-14xl);
+  }
+}
