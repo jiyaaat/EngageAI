@@ -49,6 +49,7 @@ const Desktop2 = () => {
               <DropdownTitles
                 whatIsYourAverageSpending="What is your average spending on online shopping per month?"
                 noVacancies="Less than ₹500"
+                
               />
               <DropdownTitles
                 whatIsYourAverageSpending="Return Policy Preferences"

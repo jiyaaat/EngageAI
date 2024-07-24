@@ -23,22 +23,14 @@ const FrameComponent4 = ({ className = "" }) => {
                 <div className={styles.div}>*</div>
               </div>
             </div>
-            <div className={styles.dropdown}>
-              <img
-                className={styles.rectangleIcon}
-                alt=""
-                src="/rectangle-1.svg"
-              />
-              <div className={styles.vacancyContainer}>
-                <div className={styles.noVacancies}>Monthly</div>
+            <div class="input-group mb-3 input-group-lg">
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Daily</option>
+                          <option value="2">Weekly</option>
+                          <option value="3">Monthly</option>
+                        </select>
               </div>
-              <img
-                className={styles.icondropdown}
-                alt=""
-                src="/icondropdown.svg"
-              />
-              <div className={styles.select}>GENDER</div>
-            </div>
           </div>
           <div className={styles.factorsParent}>
             <div className={styles.factors}>FACTORS</div>

@@ -23,14 +23,14 @@ const DropdownTitles = ({
         <div className={styles.dropdownValues}>
           <div className={styles.whatIsYour}>{whatIsYourAverageSpending}</div>
         </div>
-        <div className={styles.dropdown}>
-          <img className={styles.rectangleIcon} alt="" src="/rectangle-1.svg" />
-          <div className={styles.dropdownVacancies}>
-            <div className={styles.noVacancies}>{noVacancies}</div>
-          </div>
-          <img className={styles.icondropdown} alt="" src="/icondropdown.svg" />
-          <div className={styles.select}>GENDER</div>
-        </div>
+        <div class="input-group mb-3 input-group-lg">
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Daily</option>
+                          <option value="2">Weekly</option>
+                          <option value="3">Monthly</option>
+                        </select>
+              </div>
       </div>
     </div>
   );

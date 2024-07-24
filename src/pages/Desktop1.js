@@ -51,14 +51,13 @@ const Desktop1 = () => {
                             <div className={styles.div}>*</div>
                           </div>
                         </div>
-                        <div className={styles.displayName}>
-                          <h2 className={styles.hayesAmber}>Hayes Amber</h2>
+                        <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
                         </div>
+
                         <div className={styles.location}>Location</div>
                       </div>
-                      <div className={styles.edit}>
-                        <a className={styles.edit1}>Edit</a>
-                      </div>
+                      
                     </div>
                     <div className={styles.group}>
                       <img
@@ -75,8 +74,8 @@ const Desktop1 = () => {
                         />
                       </div>
                       <div className={styles.thStreetSanFranciscoCaWrapper}>
-                        <div className={styles.thStreetSan}>
-                          165 11th Street, San Francisco, CA...
+                        <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
                         </div>
                       </div>
                     </div>
@@ -112,15 +111,9 @@ const Desktop1 = () => {
                 <div className={styles.cityDropdownParent}>
                   <div className={styles.inputWrapper}>
                     <div className={styles.input}>
-                      <img
-                        className={styles.rectangleIcon}
-                        loading="lazy"
-                        alt=""
-                        src="/rectangle.svg"
-                      />
-                      <div className={styles.cityName}>
-                        Enter your Interests
-                      </div>
+                        <div class="input-group input-group-lg">
+                          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+                        </div>
                       <div className={styles.label}>
                         <span>{`Other Interests `}</span>
                         <i>(please specify)</i>
@@ -134,21 +127,14 @@ const Desktop1 = () => {
                   <div className={styles.vacancyDropdownParentWrapper}>
                     <div className={styles.vacancyDropdownParent}>
                       <div className={styles.dropdown}>
-                        <img
-                          className={styles.rectangleIcon1}
-                          alt=""
-                          src="/rectangle-1.svg"
-                        />
-                        <div className={styles.noVacanciesWrapper}>
-                          <div className={styles.noVacancies}>
-                            Choose your Gender
-                          </div>
+                      <div class="input-group mb-3 input-group-lg">
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Prefer Not to Say</option>
+                        </select>
                         </div>
-                        <img
-                          className={styles.icondropdown}
-                          alt=""
-                          src="/icondropdown.svg"
-                        />
                         <div className={styles.select}>GENDER</div>
                       </div>
                       <div className={styles.vacancyDropdownInput}>
@@ -157,19 +143,9 @@ const Desktop1 = () => {
                     </div>
                   </div>
                   <div className={styles.dropdown1}>
-                    <img
-                      className={styles.rectangleIcon2}
-                      alt=""
-                      src="/rectangle-1.svg"
-                    />
-                    <img
-                      className={styles.icondropdown1}
-                      alt=""
-                      src="/icondropdown.svg"
-                    />
-                    <div className={styles.noVacancies1}>
-                      Enter your Hobbies
-                    </div>
+                      <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+                      </div>
                     <div className={styles.select1}>HOBBIES OR INTERESTS</div>
                   </div>
                 </div>
@@ -229,17 +205,10 @@ const Desktop1 = () => {
                   </div>
                 </div>
                 <div className={styles.dropdown2}>
-                  <img
-                    className={styles.rectangleIcon3}
-                    alt=""
-                    src="/rectangle-1.svg"
-                  />
-                  <img
-                    className={styles.icondropdown2}
-                    alt=""
-                    src="/icondropdown.svg"
-                  />
-                  <div className={styles.noVacancies2}>Enter your age</div>
+                
+                  <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+                  </div>
                   <div className={styles.select2}>AGE</div>
                 </div>
               </div>
