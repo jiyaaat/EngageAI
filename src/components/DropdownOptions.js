@@ -8,14 +8,10 @@ const DropdownOptions = ({ className = "", noVacancies, select }) => {
         <div className={styles.dropdownValue}>*</div>
       </div>
       <div className={styles.dropdown}>
-        <img
-          className={styles.rectangleIcon}
-          loading="lazy"
-          alt=""
-          src="/rectangle-1.svg"
-        />
-        <img className={styles.icondropdown} alt="" src="/icondropdown.svg" />
-        <div className={styles.noVacancies}>{noVacancies}</div>
+      <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
+                  </div>
+       
         <div className={styles.select}>{select}</div>
       </div>
     </div>

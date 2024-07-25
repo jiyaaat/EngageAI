@@ -91,22 +91,14 @@ const LeftContent = ({ className = "" }) => {
             </div>
             <div className={styles.frameParent4}>
               <div className={styles.dropdownParent}>
-                <div className={styles.dropdown}>
-                  <img
-                    className={styles.rectangleIcon}
-                    alt=""
-                    src="/rectangle-1.svg"
-                  />
-                  <div className={styles.dropdownOption}>
-                    <div className={styles.noVacancies}>Yes</div>
-                  </div>
-                  <img
-                    className={styles.icondropdown}
-                    alt=""
-                    src="/icondropdown.svg"
-                  />
-                  <div className={styles.select}>GENDER</div>
-                </div>
+              <div class="input-group mb-3 input-group-lg">
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                          
+                        </select>
+              </div>
                 <div className={styles.frameParent5}>
                   <div className={styles.ifYesThenPleaseEnterYourWrapper}>
                     <div className={styles.ifYesThenContainer}>
@@ -114,19 +106,8 @@ const LeftContent = ({ className = "" }) => {
                       <i className={styles.elseEnterNa}>(else enter NA)</i>
                     </div>
                   </div>
-                  <div className={styles.dropdown1}>
-                    <img
-                      className={styles.rectangleIcon1}
-                      alt=""
-                      src="/rectangle-1.svg"
-                    />
-                    <img
-                      className={styles.icondropdown1}
-                      alt=""
-                      src="/icondropdown.svg"
-                    />
-                    <div className={styles.noVacancies1}>Enter your E-Mail</div>
-                    <div className={styles.select1}>GENDER</div>
+                  <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
                   </div>
                 </div>
                 <div className={styles.frameParent6}>
@@ -135,22 +116,14 @@ const LeftContent = ({ className = "" }) => {
                       Preferred notification frequency
                     </div>
                   </div>
-                  <div className={styles.dropdown2}>
-                    <img
-                      className={styles.rectangleIcon2}
-                      alt=""
-                      src="/rectangle-1.svg"
-                    />
-                    <div className={styles.dropdownOption1}>
-                      <div className={styles.noVacancies2}>Monthly</div>
-                    </div>
-                    <img
-                      className={styles.icondropdown2}
-                      alt=""
-                      src="/icondropdown.svg"
-                    />
-                    <div className={styles.select2}>GENDER</div>
-                  </div>
+                  <div class="input-group mb-3 input-group-lg">
+                        <select class="form-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Weekly</option>
+                          <option value="2">Monthly</option>
+                          
+                        </select>
+              </div>
                 </div>
                 <div className={styles.updateButtons}>
                   <Button
