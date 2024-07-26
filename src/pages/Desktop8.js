@@ -3,12 +3,17 @@ import NavBar from "../components/NavBar";
 import styles from "./Desktop8.module.css";
 
 const Desktop8 = () => {
-  const [feedback, setFeedback] = useState("");
+  const [productName, setProductName] = useState("");
+  const [purchaseSite, setPurchaseSite] = useState("");
+  const [dislike, setDislike] = useState("");
+  const [suggestions, setSuggestions] = useState("");
   const [sentiment, setSentiment] = useState(null);
 
   const submitFeedback = async () => {
+    const feedback = `Product Name: ${productName}\nPurchase Site: ${purchaseSite}\nDislike: ${dislike}\nSuggestions: ${suggestions}`;
+
     try {
-      const response = await fetch('/feedback', {
+      const response = await fetch('http://127.0.0.1:5000/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -27,7 +32,11 @@ const Desktop8 = () => {
       setSentiment("Failed to fetch sentiment from the server.");
     }
 
-    setFeedback("");
+    // Clear the form
+    setProductName("");
+    setPurchaseSite("");
+    setDislike("");
+    setSuggestions("");
   };
 
   return (
@@ -35,12 +44,42 @@ const Desktop8 = () => {
       <NavBar />
       <div className={styles.feedbackBox}>
         <h2>Submit Feedback</h2>
-        <textarea
-          value={feedback}
-          onChange={(e) => setFeedback(e.target.value)}
-          placeholder="Enter your feedback here..."
-          className={styles.textarea}
-        />
+        <div className={styles.inputGroup}>
+          <label htmlFor="productName">Product Name:</label>
+          <input
+            type="text"
+            id="productName"
+            value={productName}
+            onChange={(e) => setProductName(e.target.value)}
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor="purchaseSite">Purchase Site:</label>
+          <input
+            type="text"
+            id="purchaseSite"
+            value={purchaseSite}
+            onChange={(e) => setPurchaseSite(e.target.value)}
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor="dislike">Dislike:</label>
+          <input
+            type="text"
+            id="dislike"
+            value={dislike}
+            onChange={(e) => setDislike(e.target.value)}
+          />
+        </div>
+        <div className={styles.inputGroup}>
+          <label htmlFor="suggestions">Suggestions:</label>
+          <input
+            type="text"
+            id="suggestions"
+            value={suggestions}
+            onChange={(e) => setSuggestions(e.target.value)}
+          />
+        </div>
         <button onClick={submitFeedback} className={styles.submitButton}>
           Submit
         </button>
