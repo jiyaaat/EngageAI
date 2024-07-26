@@ -1,55 +1,41 @@
 import nltk
 from nltk.tokenize import word_tokenize
-import random
 import requests
+import random
 
 # Example intents and responses
 intents = {
-    "greeting": ["Hi there!", "Hello!", "Hey!", "Greetings!"],
+    "greeting": ["Hi there!, How can I help you?", "Hello!, How can I help you?", "Hey!, How can I help you?", "Greetings!, How can I help you?"],
     "goodbye": ["Goodbye!", "Bye!", "See you later!"],
-    "product_info": {
-        "skin": ["The {product_name} is a great choice for skincare. It costs {price}.", "Here is some information about {product_name}: {description}. It's perfect for skin care."],
-        "fashion": ["The {product_name} is a stylish choice. It costs {price}.", "Here is some information about {product_name}: {description}. It's a great addition to your wardrobe."],
-        "electronics": ["The {product_name} is a top choice in electronics. It costs {price}.", "Here is some information about {product_name}: {description}. It's a great electronic device."],
-        "home": ["The {product_name} is a perfect home item. It costs {price}.", "Here is some information about {product_name}: {description}. It's ideal for your home."],
-        "books": ["The {product_name} is a great book. It costs {price}.", "Here is some information about {product_name}: {description}. It's a must-read book."],
-        # Add more categories as needed
-    },
-    "recommendation": {
-        "skin": ["Based on your preference for skin care, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price} and great for skin care."],
-        "fashion": ["Based on your preference for fashion, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price} and perfect for your style."],
-        "electronics": ["Based on your interest in electronics, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price} and ideal for tech enthusiasts."],
-        "home": ["Based on your interest in home items, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price} and perfect for your home."],
-        "books": ["Based on your interest in books, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price} and a great read."],
-        # Add more categories as needed
-    },
+    "product_info": ["The {product_name} costs {price}.", "Here is some information about {product_name}: {description}.", "It's {price} for the {product_name}."],
+    "recommendation": ["Based on your preferences, you might like {product_name}. It costs {price}.", "I recommend checking out {product_name}. It's priced at {price}."],
     "order_status": ["Your order is being processed.", "Your order has been shipped.", "Your order will arrive soon."],
     "fallback": ["I'm sorry, I didn't understand that. Could you please repeat that?", "I'm not sure I can help with that. Could you please ask about a product or an order?"],
 }
 
-def get_random_product(category):
-    """Fetch random product data from an API and filter by category."""
+def get_products():
+    """Fetch product data from an API."""
     try:
         response = requests.get('https://fakestoreapi.com/products')
         response.raise_for_status()  # Raise an exception for HTTP errors
-        products = response.json()
-        # Filter products based on category
-        filtered_products = [p for p in products if category in p["title"].lower() or category in p["description"].lower()]
-        if not filtered_products:
-            filtered_products = products  # Fall back to any product if none match
-        product = random.choice(filtered_products)
-        return {
-            "name": product["title"],
-            "price": f'{product["price"]} USD',
-            "description": product["description"]
-        }
+        return response.json()
     except requests.RequestException as e:
         print(f"Error fetching product data: {e}")
-        return {
-            "name": "Unknown product",
-            "price": "Unknown price",
-            "description": "No description available"
-        }
+        return []
+
+def search_products(query, products):
+    """Filter products based on the user's query."""
+    results = []
+    for product in products:
+        title = product["title"].lower()
+        description = product["description"].lower()
+        if query.lower() in title or query.lower() in description:
+            results.append({
+                "name": product["title"],
+                "price": f'{product["price"]} USD',
+                "description": product["description"]
+            })
+    return results
 
 def preprocess_input(input_text):
     """Tokenize and preprocess the input text."""
@@ -58,49 +44,40 @@ def preprocess_input(input_text):
 def process_input(input_text):
     """Process the user input and return a response."""
     tokens = preprocess_input(input_text)
+    products = get_products()  # Fetch products once per request
     
-    # Check for greetings
     if tokens & {"hi", "hello", "hey"}:
         return random.choice(intents["greeting"])
 
-    # Check for goodbye
     if tokens & {"bye", "goodbye"}:
         return random.choice(intents["goodbye"])
 
-    # Check for product inquiry
-    for category in ["skin", "fashion", "electronics", "home", "books"]:  # Add more categories as needed
-        if category in tokens:
-            product = get_random_product(category)
-            return random.choice(intents["product_info"].get(category, ["No information available."])).format(
-                product_name=product["name"], price=product["price"], description=product["description"]
-            )
+    if tokens & {"product", "item", "price"}:
+        # Extract search query from the input
+        search_query = ' '.join(tokens & {"product", "item", "price"})
+        if search_query:
+            matching_products = search_products(search_query, products)
+            if matching_products:
+                return random.choice(intents["product_info"]).format(
+                    product_name=matching_products[0]["name"],
+                    price=matching_products[0]["price"],
+                    description=matching_products[0]["description"]
+                )
+        return random.choice(intents["fallback"])
 
-    # Check for recommendation request
-    for category in ["skin", "fashion", "electronics", "home", "books"]:  # Add more categories as needed
-        if category in tokens:
-            product = get_random_product(category)
-            return random.choice(intents["recommendation"].get(category, ["No recommendations available."])).format(
-                product_name=product["name"], price=product["price"]
-            )
+    if tokens & {"recommend", "suggest"}:
+        # Extract search query from the input
+        search_query = ' '.join(tokens & {"recommend", "suggest"})
+        if search_query:
+            matching_products = search_products(search_query, products)
+            if matching_products:
+                return random.choice(intents["recommendation"]).format(
+                    product_name=matching_products[0]["name"],
+                    price=matching_products[0]["price"]
+                )
+        return random.choice(intents["fallback"])
 
-    # Check for order status
     if tokens & {"order", "status", "shipping"}:
         return random.choice(intents["order_status"])
 
-    # Fallback for unrecognized intents
     return random.choice(intents["fallback"])
-
-# Example usage
-def main():
-    print("Bot: Hello! How can I assist you today?")
-    while True:
-        user_input = input("You: ")
-        if user_input.lower() == 'exit':
-            print("Bot: Goodbye! Have a nice day.")
-            break
-        else:
-            bot_response = process_input(user_input)
-            print(f"Bot: {bot_response}")
-
-if __name__ == "__main__":
-    main()
