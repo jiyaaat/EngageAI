@@ -146,15 +146,13 @@
   text-align: center;
 }
 .serviceOptions {
-  width: 1313px;
+  width: 1277px;
   border-radius: 30px;
   background-color: var(--color-silver);
   flex-direction: row;
   justify-content: space-between;
-  padding: var(--padding-153xl) var(--padding-5xl) var(--padding-153xl)
-    var(--padding-22xl);
-  min-height: 907px;
-  gap: var(--gap-xl);
+  padding: 20px;
+  height: 540px;
   text-align: left;
   font-size: var(--font-size-10xl);
   color: var(--color-white);
@@ -171,7 +169,7 @@
   width: 1388px;
   align-items: flex-start;
   padding: 0 0 0 var(--padding-xl);
-  gap: 69px;
+  gap: 35px;
   max-width: 100%;
   text-align: left;
   font-size: 38px;

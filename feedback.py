@@ -6,7 +6,12 @@ analyzer = SentimentIntensityAnalyzer()
 # Function to analyze sentiment
 def analyze_sentiment(feedback):
     sentiment = analyzer.polarity_scores(feedback)
-    return sentiment
+    return {
+        'neg': sentiment['neg'],
+        'neu': sentiment['neu'],
+        'pos': sentiment['pos'],
+        'compound': sentiment['compound']
+    }
 
 def main():
     while True:

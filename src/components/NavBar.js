@@ -6,37 +6,28 @@ import styles from "./NavBar.module.css";
 
 const NavBar = ({
   className = "",
-  onAboutUsTextClick,
-  onServicesTextClick,
 }) => {
   const navigate = useNavigate();
 
-  const onAboutUsTextClick1 = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='oURSERVICESText']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
+  const navigateToHome = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
 
-  const onServicesTextClick1 = useCallback(() => {
+  const navigateToServices = useCallback(() => {
     navigate("/desktop-12");
   }, [navigate]);
 
   return (
     <header className={[styles.navBar, className].join(" ")}>
       <div className={styles.engageAILogo}>
-        <a className={styles.engageai}>EngageAI</a>
+        <a className={styles.engageai} onClick={navigateToHome}>EngageAI</a>
       </div>
       <nav className={styles.navbarInfo}>
         <nav className={styles.navBarInfo}>
-          <a className={styles.home}>Home</a>
-          <a className={styles.aboutUs} onClick={onAboutUsTextClick}>
-            Features
-          </a>
-          <a className={styles.blog}>Benefits</a>
-          <a className={styles.services} onClick={onServicesTextClick}>
-            Services
-          </a>
+          <a className={styles.home} onClick={navigateToHome}>Home</a>
+          <a className={styles.aboutUs} onClick={navigateToHome}>Features</a>
+          <a className={styles.blog} onClick={navigateToHome}>Benefits</a>
+          <a className={styles.services} onClick={navigateToServices}>Services</a>
         </nav>
       </nav>
       <Button
@@ -69,10 +60,6 @@ const NavBar = ({
 
 NavBar.propTypes = {
   className: PropTypes.string,
-
-  /** Action props */
-  onAboutUsTextClick: PropTypes.func,
-  onServicesTextClick: PropTypes.func,
 };
 
 export default NavBar;

@@ -19,7 +19,7 @@ def recommend_product(age, gender, preference):
     # Convert age to category: young, middle-aged, senior
     if age <= 30:
         age_category = "young"
-    elif age <= 60:
+    elif age <60:
         age_category = "middle-aged"
     else:
         age_category = "senior"

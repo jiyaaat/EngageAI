@@ -7,7 +7,9 @@
   display: inline-block;
   min-width: 127px;
   white-space: nowrap;
+  cursor: pointer; /* Added cursor pointer */
 }
+
 .engageAILogo {
   display: flex;
   flex-direction: column;
@@ -15,43 +17,42 @@
   justify-content: flex-start;
   padding: var(--padding-10xs-5) 0 0;
 }
+
+.home,
 .aboutUs,
 .blog,
-.home,
 .services {
   text-decoration: none;
   position: relative;
   letter-spacing: -0.05em;
   font-weight: 500;
   display: inline-block;
+  cursor: pointer; /* Added cursor pointer */
 }
+
 .home {
-  color: var(--color-mediumslateblue);
   min-width: 48px;
 }
-.aboutUs,
-.blog,
-.services {
-  color: inherit;
-}
+
 .aboutUs {
   min-width: 66px;
-  cursor: pointer;
 }
-.blog,
-.services {
+
+.blog {
   min-width: 63px;
 }
+
 .services {
   min-width: 62px;
-  cursor: pointer;
 }
+
 .navBarInfo,
 .navbarInfo {
   margin: 0;
   display: flex;
   align-items: flex-start;
 }
+
 .navBarInfo {
   align-self: stretch;
   flex-direction: row;
@@ -62,6 +63,7 @@
   color: var(--color-black1);
   font-family: var(--text-16);
 }
+
 .navbarInfo {
   width: 419px;
   flex-direction: column;
@@ -70,10 +72,12 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .button {
   height: 44px;
   width: 157px;
 }
+
 .navBar {
   align-self: stretch;
   backdrop-filter: blur(12px);
@@ -95,6 +99,16 @@
   color: var(--color-mediumslateblue);
   font-family: var(--text-16);
 }
+
+/* New styles for active link */
+.navBarInfo a {
+  color: var(--color-black1); /* Default color */
+}
+
+.navBarInfo a.active {
+  color: var(--color-mediumslateblue); /* Active link color */
+}
+
 @media screen and (max-width: 750px) {
   .navbarInfo {
     display: none;
@@ -105,6 +119,7 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 450px) {
   .navBar {
     padding-right: var(--padding-xl);
