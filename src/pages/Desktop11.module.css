@@ -1,25 +1,85 @@
 .desktop2 {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 0 0 var(--padding-47xl);
-  box-sizing: border-box;
-  gap: var(--gap-128xl);
-  line-height: normal;
-  letter-spacing: normal;
+  align-items: center;
+  background-color: #f5f7fa;
+  height: 100vh;
+  padding: 20px;
 }
-@media screen and (max-width: 750px) {
-  .desktop2 {
-    gap: var(--gap-54xl);
-  }
+
+.chatbox {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 1050px; /* Adjusted width to be more manageable */
+  max-width: 90%;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 557px; /* Set a fixed height */
 }
-@media screen and (max-width: 450px) {
-  .desktop2 {
-    gap: var(--gap-18xl);
-  }
+
+.messages {
+  flex: 1; /* Allow messages container to grow and take available space */
+  overflow-y: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.botMessage, .userMessage {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.botMessage {
+  background-color: #e6e6e6;
+  align-self: flex-start;
+  color: #333;
+}
+
+.userMessage {
+  background-color: #0084ff;
+  align-self: flex-end;
+  color: white;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjusted margin */
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #b0b0b0;
+}
+
+.sendButton {
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.sendButton:hover {
+  background-color: #005bb5;
 }
