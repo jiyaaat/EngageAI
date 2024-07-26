@@ -15,9 +15,11 @@ def analyze_sentiment(feedback):
 
 def main():
     while True:
-        # Input customer feedback
+        # Input customer details
+        product_name = input("Enter the name of the product: ")
+        site = input("Enter the site where the product was purchased: ")
         feedback = input("Enter customer feedback (or type 'exit' to stop): ")
-
+        
         if feedback.lower() == 'exit':
             break
 
@@ -25,6 +27,8 @@ def main():
         sentiment = analyze_sentiment(feedback)
 
         # Output sentiment analysis
+        print(f"Product: {product_name}")
+        print(f"Site: {site}")
         print(f"Feedback: {feedback}")
         print(f"Sentiment: {sentiment}")
         print("-" * 50)
